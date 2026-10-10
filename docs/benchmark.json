@@ -1,0 +1,15 @@
+{
+  "context": "Sequential loopback HTTP, one API process, 160 synthetic leads, persistent SQLite. One warm-up request per endpoint. Includes HTTP and serialization. Not a concurrency or production benchmark.",
+  "results": {
+    "/api/leads?q=Maya&size=20": {
+      "requests": 30,
+      "median_ms": 34.33,
+      "p95_ms": 53.26
+    },
+    "/api/analytics?days=180": {
+      "requests": 30,
+      "median_ms": 53.92,
+      "p95_ms": 68.82
+    }
+  }
+}
